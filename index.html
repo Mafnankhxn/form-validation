@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2f6083083.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Fill The Form!</h1>
+    
+    <form class="form" id="form"></form>
+        <div class="formelements">
+          <div class="input1">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" onkeyup="namecheck()"/>
+      <span class="error" id="nameerror"></span>
+    </div>
+    <div class="input2">
+      <label for="Phone">Phone:</label>
+      <input type="tel" name="Phone" id="phone" onkeyup="phonecheck()"/>
+      <span class="error" id="phoneerror"></span>
+    </div>
+    <div class="input3">
+      <label for="Email">Email:</label>
+      <input type="email" name="Email" id="email" onkeyup="emailcheck()"/>
+      <span class="error" id="emailerror"></span>
+    </div>
+    <div class="input4">
+      <label for="Message">Message:</label>
+      <input type="text" name="message" id="message" onkeyup="messagecheck()"/>
+      <span class="error" id="messageerror"></span>
+    </div>
+    </div>
+    <button type="submit" class="btn" id="btn">submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
